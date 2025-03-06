@@ -738,6 +738,16 @@ header {
   height: 100%;
 }
 
+
+.image_article_petit {
+  width: 20%;
+  border: 2px solid #FFF;
+}
+
+.image_article_petit:hover {
+  border: 2px solid black;
+}
+
 .infos_row {
   display: flex;
   flex-direction: row;
