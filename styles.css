@@ -51,7 +51,7 @@ body {
   border: 2px solid #aaa;
 }
 
-#zone{
+#zone {
   display: flex;
   position: fixed;
   bottom: 4em;
@@ -87,6 +87,10 @@ body {
   border: 0;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.jscolor:focus, .jscolor:hover, .color:hover, .color:focus {
+  scale: 105%;
 }
 
 .color-changing-svg path {
