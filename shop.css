@@ -590,7 +590,7 @@ header {
 }
 
 .prix_prom {
-  background-color: #ff70fa;
+  background-color: #ff3030;
   width: fit-content;
   padding: 0.3rem;
   color: white;
@@ -599,7 +599,7 @@ header {
 }
 
 .tag_solde {
-  color: #ff70fa;
+  color: #ff3030;
   font-weight: bold;
   font-size: 1.2rem;
 
@@ -788,7 +788,7 @@ header {
 }
 
 .prix_prom_details {
-  background-color: #ff70fa;
+  background-color: #ff3030;
   width: fit-content;
   padding: 0.3rem;
   color: white;
@@ -797,7 +797,7 @@ header {
 }
 
 .tag_solde_details {
-  color: #ff70fa;
+  color: #ff3030;
   font-weight: bold;
   font-size: 1.4rem;
 
