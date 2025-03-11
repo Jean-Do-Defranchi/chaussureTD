@@ -89,7 +89,10 @@ body {
   cursor: pointer;
 }
 
-.jscolor:focus, .jscolor:hover, .color:hover, .color:focus {
+.jscolor:focus,
+.jscolor:hover,
+.color:hover,
+.color:focus {
   scale: 105%;
 }
 

@@ -9,6 +9,9 @@
   <link rel="stylesheet" href="shop.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jscolor/2.0.4/jscolor.js">
   </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.10.2/lottie.min.js"
+    integrity="sha512-fTTVSuY9tLP+l/6c6vWz7uAQqd1rq3Q/GyKBN2jOZvJSLC5RjggSdboIFL1ox09/Ezx/AKwcv/xnDeYN9+iDDA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 </head>
 
@@ -221,6 +224,14 @@
     });
   });
 
+  const animation = bodymovin.loadAnimation({
+    container: document.getElementById('produit-svg'),
+    path: 'Animation_confetti.json',
+    renderer: 'svg',
+    loop: true,
+    autoplay: false,
+  })
+
   // Ajout de la fonction changeColor à tous les éléments cliquable
   var el = document.getElementsByClassName("color");
   for (var i = 0; i < el.length; i++) {
@@ -233,7 +244,15 @@
     // set the hex color
     selectedElement.style.fill = hex;
     selectedElement.style.stroke = "none";
+    // Play the animation on hover
+    animation.play();
+    // Stop the animation after playing once
+    animation.addEventListener('loopComplete', function () {
+      animation.stop();
+    });
   }
+
+
 </script>
 
 </html>

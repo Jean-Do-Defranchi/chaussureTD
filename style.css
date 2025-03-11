@@ -78,7 +78,10 @@ body {
   padding: 13px 13px;
 }
 
-.jscolor:focus, .jscolor:hover, .color:hover, .color:focus {
+.jscolor:focus,
+.jscolor:hover,
+.color:hover,
+.color:focus {
   scale: 105%;
 }
 
