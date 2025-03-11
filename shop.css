@@ -722,7 +722,7 @@ header {
 
 .vue_article {
   display: grid;
-  grid-template-columns: 68% 30%;
+  grid-template-columns: 60% 40%;
   padding: 2vh 4vw;
 }
 
