@@ -297,7 +297,6 @@ b {
 
 header {
   flex-direction: row;
-  position: fixed;
   width: 100%;
   z-index: 4;
   width: 100vw;
@@ -306,12 +305,12 @@ header {
 .navbar {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
   position: relative;
   padding-left: 4vw;
   padding-right: 4vw;
   background-color: #EFEFF0;
-  padding-top: 2.5rem;
+  padding-top: 1rem;
 }
 
 .navbar_down {
@@ -433,9 +432,10 @@ header {
 .banner_text {
   color: white;
   position: absolute;
-  bottom: 0;
-  left: 0;
-  padding: 1.5rem;
+  top: 0;
+  left: 50;
+  padding: 2.5rem;
+  font-size: 4rem;
 }
 
 .banner_sup {
@@ -443,14 +443,14 @@ header {
   display: flex;
   flex: content;
   width: 80vw;
-  height: 20rem;
+  height: 39rem;
   position: relative;
   overflow: hidden;
 }
 
 .img_banner {
-  height: fit-content;
-  width: fit-content;
+  height: auto;
+  width: auto;
 }
 
 .menu {
@@ -659,7 +659,7 @@ header {
 
 .nom_article {
   color: #000000;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: bold;
   line-height: 1.5rem;
 }
@@ -733,6 +733,10 @@ header {
   margin-right: 1.5rem;
 }
 
+.width-l{
+  width: 1fr;
+}
+
 .image_article {
   width: 100%;
   height: 100%;
@@ -748,6 +752,12 @@ header {
   border: 2px solid black;
 }
 
+.image_article_moyen{
+  margin-top: 2rem;
+  width: 89%;
+  border: 2px solid #FFF;
+}
+
 .infos_row {
   display: flex;
   flex-direction: row;
@@ -756,7 +766,6 @@ header {
 }
 
 .desc_article {
-  font-weight: bold;
   margin-top: 1.5rem;
   font-size: 1.2rem;
   margin-bottom: 1.5rem;
